@@ -42,6 +42,30 @@ namespace VendingMachineTask
                 {
                     BuyProduct();
                 }
+
+Technical-Task-/
+in
+main
+
+1
+
+•using System;
+
+2
+
+using System.Collections;
+
+3
+
+using System.Collections.Generic;
+
+4
+
+​
+
+5
+
+namespace VendingMachineTask
                 Console.ReadKey();
             }
         }
@@ -50,41 +74,16 @@ namespace VendingMachineTask
         {
             while (true)
             {
-                string userMessage = "INSERT COIN\n1: 5p\n2: 10p\n3: 20p\n4: 50p\n5: £1\n6: £2\n";
+                string userMessage = "INSERT COIN";
                 Console.Clear();
                 Console.WriteLine(userMessage);
                 int optionValue = 0;
-                isValid = int.TryParse(Console.ReadLine(), out optionValue);
-                while (isValid == false)
-                {
-                    Console.WriteLine(errorMessage + userMessage);
-                    isValid = int.TryParse(Console.ReadLine(), out optionValue);
-                }
-
-                switch (optionValue)
-                {
-                    case 1:
-                        InsertCoin("5p");
-                        break;
-                    case 2:
-                        InsertCoin("10p");
-                        break;
-                    case 3:
-                        InsertCoin("20p");
-                        break;
-                    case 4:
-                        InsertCoin("50p");
-                        break;
-                    case 5:
-                        InsertCoin("£1");
-                        break;
-                    case 6:
-                        InsertCoin("£2");
-                        break;
-                    default:
-                        InsertCoin("2p");
-                        break;
-                }
+                string userValue = console.readline();
+                
+                insertcoin(userValue);
+                
+              //Rmoved the switch statement. validation now move 
+              
                 Console.WriteLine("INSERT ANOTHER COIN?\n Y or N");
 
                 string yesNo;
