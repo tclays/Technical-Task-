@@ -41,33 +41,10 @@ namespace VendingMachineTask
                 else
                 {
                     BuyProduct();
+                    
                 }
-
-Technical-Task-/
-in
-main
-
-1
-
-•using System;
-
-2
-
-using System.Collections;
-
-3
-
-using System.Collections.Generic;
-
-4
-
-​
-
-5
-
-namespace VendingMachineTask
                 Console.ReadKey();
-            }
+            
         }
 
         public static void CoinMenu()
