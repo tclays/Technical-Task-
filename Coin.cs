@@ -5,8 +5,9 @@ using System.Text;
 namespace VendingMachineTask
 {
     public class Coin
-    {
-        private string mValue = null;
+    
+        private string name;
+        private decimal mvalue;
 
         public Coin()
         {
@@ -14,7 +15,16 @@ namespace VendingMachineTask
         }
         public Coin(string userValue)
         {
-            mValue = userValue;
+            name = userValue;
+            
+            
+            switch userValue
+                
+             case  5p
+          mvalue = 0.05;
+             default 
+                   mvALUE = 0.00m;
+            
         }
 
         public string MValue { get => mValue; set => mValue = value; }
